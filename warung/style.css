@@ -930,7 +930,7 @@ border-bottom-right-radius: 13px;
 .data-lokasi-asal, .data-lokasi-tujuan, .data-kurir, .data-toko {
     font-size: 14px;
     margin-bottom: 10px;
-    padding: 12px 12px;
+    padding: 10px 0;
     border-bottom: 1px solid #999;
     
 }
