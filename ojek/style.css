@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#pesan {
+   position:fixed;
+
+    width: 100%;
+    height:auto;
+    background: #27AE60;
+    overflow-y: auto;
+    z-index:2;
+border-radius:0 0 0px 0px;
+}
+
+#map {
+    float: right;
+    width: 100%;
+    height: 67vh;
+    z-index:1;
+    top:33vh;
+    
+    
+}
+
+#title {
+    text-align: center;
+    margin: 8px 0;
+
+    margin-top:-17px;
+}
+
+.inner {
+    padding: 20px;
+
+}
+
+#detail {
+    position: fixed;
+    display: none;
+    top: 66%;
+    left:3.7%;
+    width: 93%;
+    height: 250px;
+    background: #000;
+    overflow-y: auto;
+    z-index: 2;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#detail th, #detail td {
+    padding: 5px;
+    font-size:14px;
+}
+.card-custom {
+    background-color: #dde1e7;
+    padding: 10px 10px;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+button.tab-opsi {
+    position: relative;
+    background: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #27AE60;
+    cursor: pointer;
+} 
+button.tab-opsi.active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+font-weight:bold;
+}          
+#kirim-wa {
+    position: relative;
+    display: block;
+    background: #27AE60;
+    color: #fff;
+    padding: 3px 10px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+}
+#kirim-wa:focus,#kirim-wa:hover {
+    border: 0;
+    outline: 0;
+}          
+#driver {
+    cursor: pointer;
+}
+#pesan-btn {
+    display: block;
+    margin: auto;
+    color:#fff;
+}          
+.pilih-driver {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.pilih-driver.active {
+    display: block;
+}          
+.pilih-driver ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%,-45%);
+    background-color: #dde1e7;
+    border-radius: 0.5rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+    
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    margin: auto;
+    list-style: none;
+} 
+.pilih-driver ul li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 8px;
+    margin: 0;
+    margin-bottom: 15px;
+    position: relative;
+    color: #292929;
+    cursor: pointer;
+}
+.pilih-driver ul li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 50px;
+    z-index: 1;
+    border-top: 1px dotted #ccc;
+}
+.pilih-driver ul li img {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+    padding:2px;
+}          
+.pilih-driver ul li .name {
+    color: #000;
+    font-size: 12px;
+    padding: 4px 20px 0 0;
+    font-weight: 500;
+    float: left;
+    background: #dde1e7;
+    position: relative;
+    z-index: 2;
+}
+.pilih-driver ul li .icon {
+    float: right;
+    width: 16px;
+    height: 16px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 10px;
+    border: 2px solid #27AE60;
+    border-radius: 100%;
+}   
+.pilih-driver ul li.active .icon {
+    background: #27AE60;
+    box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+} 
+input#driver {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+    padding: 5px;
+    display: block;
+    border: 1px solid #ff000000;
+    border-radius: 5px;
+    background: #dde1e7;
+    box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+    color: #000;
+    width: 100%;
+    text-overflow: ellipsis;
+    background-image: url(data:image/svg+xml,%3Csvg\ style=\'fill:rgba\(0,0,0,.4\);\'\ xmlns=\'http://www.w3.org/2000/svg\'\ viewBox=\'0\ 0\ 512\ 512\'%3E%3Cpath\ d=\'M256\ 294.1L383\ 167c9.4-9.4\ 24.6-9.4\ 33.9\ 0s9.3\ 24.6\ 0\ 34L273\ 345c-9.1\ 9.1-23.7\ 9.3-33.1.7L95\ 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3\ 7-17c9.4-9.4\ 24.6-9.4\ 33.9\ 0l127.1\ 127z\'%3E%3C/path%3E%3C/svg%3E);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 5px;
+    background-size: 20px auto;
+    padding-right: 45px;
+ }
