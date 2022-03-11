@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="#0095da" name="theme-color">
+    <meta content="#0095da" name="msapplication-navbutton-color">
+    <meta content="Product Example - Form Checkout" name="keywords">
+    <title>Product Example - Form Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      #main-produk {
+        padding-top: 15px!important;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <section id="main-produk">
+        <div class="main-produk-wrap">
+          <div class="form-checkout">
+            <button class="tombol-close">
+              <span class='close-button'>&#10005;</span>
+            </button>
+            <div class="title-keterangan">Alamat Pengiriman</div>
+            <div class="data-lokasi-tujuan"></div>
+            <div class="title-keterangan">Detail Barang</div>
+            <div class="data-toko"></div>
+            <div class="data-lokasi-asal bold"></div>
+            <div class="item-data-produk">
+              <div class="simpleCart_items"></div>
+            </div>
+            <div class="box-harga-produk">
+              <div class="detail-harga">
+                Total Harga (<span class='simpleCart_quantity'></span> Produk) <span class='simpleCart_total'></span>
+              </div>
+              <div class="detail-ongkir">
+                Ongkir <span class="data-ongkos"></span>
+              </div>
+            </div>
+            <div class="title-keterangan">Dikirim Dengan</div>
+            <div class="data-kurir"></div>
+            <form>
+            <label for="Nama Lengkap" class="title-keterangan">Nama Lengkap</label>
+            <input style="box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);border-radius:10px;background: #dde1e7;" class="data-nama" name="Nama Lengkap" type="text" placeholder="Nama Lengkap Anda">
+            <label for="Nomor Whatsapp" class="title-keterangan">Nomor Whatsapp</label>
+            <input style="box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);border-radius:10px;background: #dde1e7;" class="data-nomor" name="Nomor Whatsapp" type="number" placeholder="62xxxxxxxxxx">
+            <label for="Pembayaran" class="title-keterangan">Pembayaran</label>
+            <select class="data-pembayaran" name="Pembayaran">
+              <option value="default">Pilih Pembayaran</option>
+              <option value="Ahsinul Umam a/n 5859459234121936 - Neo Commerce">Via Bank Neo Commerce</option>
+              <option value="Tunai/Cash">Tunai Atau Cash</option>
+            </select>
+            <label for="Catatan" class="title-keterangan">Catatan</label>
+            <input style="box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);border-radius:10px;background: #dde1e7;" class="data-catatan" name="Catatan" type="text" placeholder="Tulis Catatan Disini">
+            </form>
+            <div class="box-checkout">
+              <button class="grid total-belanja simpleCart_grandTotal">Rp.NaN</button>
+              <button class="grid kirim-data">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA93mcV_umWpfWf4-d1u_Tc1ErOYsGAW9Y&libraries=places"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
