@@ -841,6 +841,7 @@ border-bottom-right-radius: 13px;
     border: 1px solid #ddd;
     border-bottom: none;
     border-radius: 7px 7px 0 0;
+	box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 .tombol-lanjut {
     display: -webkit-box;
@@ -930,7 +931,7 @@ border-bottom-right-radius: 13px;
 .data-lokasi-asal, .data-lokasi-tujuan, .data-kurir, .data-toko {
     font-size: 14px;
     margin-bottom: 10px;
-    padding: 10px 0;
+    padding: 2px 0;
     border-bottom: 1px solid #999;
     
 }
