@@ -805,7 +805,7 @@ border-bottom-right-radius: 13px;
     max-width: 250px;
     border: none;
     border-bottom: 1px solid #eee;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
     background:#dde1e7;
 }
@@ -883,18 +883,19 @@ border-bottom-right-radius: 13px;
     cursor: pointer;
     list-style: none;
     text-decoration: none;
+	border-radius:10px;
 }
 .tombol-lanjut .lanjut {
     background: #27AE60;
     color: #fff;
     box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
-    border-radius:17px;
+    border-radius:10px;
 }
 .tombol-lanjut a:hover {
     background: #e93314;
     color: #fff;
     box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
-    border-radius:17px;
+    border-radius:10px;
 }
 
 /* Menu Form Checkout */
@@ -930,7 +931,7 @@ border-bottom-right-radius: 13px;
 .data-lokasi-asal, .data-lokasi-tujuan, .data-kurir, .data-toko {
     font-size: 14px;
     margin-bottom: 10px;
-    padding: 10px 0;
+    padding: 10px 10;
     border-bottom: 1px solid #999;
     box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
     border-radius:10px;
